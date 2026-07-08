@@ -65,7 +65,7 @@
             display-name = "COLEMAK";
             bindings = <
   &kp TAB    &kp Q  &kp W  &kp F    &kp P  &kp B           &kp UP              &kp J   &kp L  &kp U      &kp Y    &kp SEMI  &kp BSPC
-  CTRL_ESC       &kp A  &kp R  &kp S    &kp T  &kp G  &kp LEFT  &kp ENTER  &kp RIGHT  &kp M   &kp N  &kp E      &kp I    &kp O     &kp SQT
+  &ht_tp LCTRL ESC       &kp A  &kp R  &kp S    &kp T  &kp G  &kp LEFT  &kp ENTER  &kp RIGHT  &kp M   &kp N  &kp E      &kp I    &kp O     &kp SQT
   &kp LSHIFT  &kp Z  &kp X  &kp C    &kp D  &kp V  &kp SPACE             &kp DOWN   &kp K   &kp H  &kp COMMA  &kp DOT  &kp FSLH  &mt RSHIFT ESC
                             &kp LALT  &to 3  &ht_nav 1 SPACE                        &kp RET &to 2  &kp RIGHT_COMMAND
             >;
