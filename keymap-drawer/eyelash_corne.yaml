@@ -14,7 +14,7 @@ layers:
   - Y
   - {t: ;, s: ':'}
   - {t: '$$mdi:backspace$$', type: backspace}
-  - '&ht_tp LEFT_CONTROL ESC'
+  - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-control$$'}
   - A
   - R
   - S
