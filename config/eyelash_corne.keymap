@@ -12,6 +12,7 @@
     behaviors {
         ht_tp: ht_tp {
             compatible = "zmk,behavior-hold-tap";
+            #binding-cell = <2>;
             flavor = "tap-unless-interrupted";
             tapping-term-ms = <1000>;
             bindings = <&kp>, <&kp>;
