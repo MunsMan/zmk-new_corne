@@ -15,7 +15,7 @@
             flavor = "tap-unless-interrupted";
             tapping-term-ms = <1000>;
             bindings = <&kp>, <&kp>;
-        }
+        };
         td0: td0 {
             compatible = "zmk,behavior-tap-dance";
             display-name = "Shift/Caps Lock Tap Dance";
