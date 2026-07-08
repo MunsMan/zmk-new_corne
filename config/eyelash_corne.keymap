@@ -67,7 +67,7 @@
   &kp TAB    &kp Q  &kp W  &kp F    &kp P  &kp B           &kp UP              &kp J   &kp L  &kp U      &kp Y    &kp SEMI  &kp BSPC
   CTRL_ESC       &kp A  &kp R  &kp S    &kp T  &kp G  &kp LEFT  &kp ENTER  &kp RIGHT  &kp M   &kp N  &kp E      &kp I    &kp O     &kp SQT
   &kp LSHIFT  &kp Z  &kp X  &kp C    &kp D  &kp V  &kp SPACE             &kp DOWN   &kp K   &kp H  &kp COMMA  &kp DOT  &kp FSLH  &mt RSHIFT ESC
-                            &kp LALT  &to 3  &ht_nav 1 SPACE                        &kp RET &to 2  &kp RALT
+                            &kp LALT  &to 3  &ht_nav 1 SPACE                        &kp RET &to 2  &kp RIGHT_COMMAND
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
@@ -116,7 +116,7 @@
         set_layer {
             display-name = "SET";
             bindings = <
-  &trans        &trans        &trans      &trans          &trans  &trans          &trans              &to 5   &trans  &trans  &trans  &trans  &trans
+  &trans        &trans        &trans      &trans          &trans  &trans          &trans              &trans  &trans  &trans  &trans  &trans  &trans
   &out OUT_USB  &out OUT_BLE  &trans      &trans          &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
   &bt BT_PRV    &bt BT_NXT    &bt BT_CLR  &bt BT_CLR_ALL  &trans  &trans  &trans          &trans      &trans  &trans  &trans  &trans  &trans  &trans
                               &trans      &to 0           &trans                          &trans  &to 2   &trans
@@ -125,17 +125,5 @@
             sensor-bindings = <&rsr_vol &rsr_trans>;
         };
 
-        // Layer 5
-        vim_layer {
-            display-name = "VIM";
-            bindings = <
-  &trans  &trans  &trans  &trans   &trans  &trans          &trans              &trans  &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans      &trans  &kp J   &kp K   &kp L   &trans  &trans
-  &trans  &trans  &trans  &trans   &trans  &trans  &trans          &trans      &trans  &trans  &trans  &trans  &trans  &trans
-                          &to 0    &trans  &trans                              &trans  &trans  &trans
-            >;
-
-            sensor-bindings = <&rsr_vol &rsr_trans>;
-        };
     };
 };
