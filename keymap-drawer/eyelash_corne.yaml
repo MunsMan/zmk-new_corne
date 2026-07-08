@@ -14,7 +14,7 @@ layers:
   - Y
   - {t: ;, s: ':'}
   - {t: '$$mdi:backspace$$', type: backspace}
-  - '&td0'
+  - '&ht_tp LEFT_CONTROL ESC'
   - A
   - R
   - S
@@ -29,7 +29,7 @@ layers:
   - I
   - O
   - {t: '''', s: '"'}
-  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-shift$$
   - Z
   - X
   - C
@@ -43,7 +43,7 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - LGUI
+  - $$mdi:apple-keyboard-option$$
   - {t: NUM, h: toggle}
   - {t: '$$mdi:keyboard-space$$', h: NAV}
   - {t: '$$mdi:keyboard-return$$', type: enter}
