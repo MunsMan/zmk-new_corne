@@ -4,13 +4,13 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 
-#define CTRL_ESC &ht_tp LEFT_CONTROL ESC
-
 &soft_off { hold-time-ms = <2000>; };
+
+#define CTRL_ESC &ht_tp LEFT_CONTROL ESC
 
 / {
     behaviors {
-        ht_tp: ht_tp {
+        ht_tp: tap-unless-interrupted {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-unless-interrupted";
@@ -64,10 +64,10 @@
         default_layer {
             display-name = "COLEMAK";
             bindings = <
-  &kp TAB    &kp Q  &kp W  &kp F    &kp P  &kp B           &kp UP              &kp J   &kp L  &kp U      &kp Y    &kp SEMI  &kp BSPC
-  &ht_tp LCTRL ESC       &kp A  &kp R  &kp S    &kp T  &kp G  &kp LEFT  &kp ENTER  &kp RIGHT  &kp M   &kp N  &kp E      &kp I    &kp O     &kp SQT
-  &kp LSHIFT  &kp Z  &kp X  &kp C    &kp D  &kp V  &kp SPACE             &kp DOWN   &kp K   &kp H  &kp COMMA  &kp DOT  &kp FSLH  &key RSHIFT
-                            &kp LALT  &to 3  &ht_nav 1 SPACE                        &kp RET &to 2  &kp RIGHT_COMMAND
+  &kp TAB    &kp Q  &kp W  &kp F    &kp P  &kp B            &kp UP                &kp J   &kp L  &kp U      &kp Y    &kp SEMI  &kp BSPC
+  CTRL_ESC   &kp A  &kp R  &kp S    &kp T  &kp G  &kp LEFT  &kp ENTER  &kp RIGHT  &kp M   &kp N  &kp E      &kp I    &kp O     &kp SQT
+  &kp LSHIFT &kp Z  &kp X  &kp C    &kp D  &kp V  &kp SPACE            &kp DOWN   &kp K   &kp H  &kp COMMA  &kp DOT  &kp FSLH  &key RSHIFT
+                           &kp LALT &to 3  &ht_nav 1 SPACE                        &kp RET &to 2  &kp RIGHT_COMMAND
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
@@ -104,9 +104,9 @@
             display-name = "NUM";
             bindings = <
   &trans  &trans  &trans  &trans     &trans     &trans          &trans              &trans  &kp N7  &kp N8  &kp N9  &trans     &trans
-  &trans  &trans  &kp LALT  &kp LGUI   &kp LCTRL  &trans  &trans  &trans  &trans      &trans  &kp N4  &kp N5  &kp N6  &kp DOT    &trans
+  &trans  &trans  &kp LALT &kp LGUI   &kp LCTRL  &trans  &trans  &trans  &trans      &trans  &kp N4  &kp N5  &kp N6  &kp DOT    &trans
   &trans  &trans  &trans  &trans     &trans     &trans  &trans          &trans      &trans  &kp N1  &kp N2  &kp N3  &kp COMMA  &to 4
-                          &LALT     &to 0      &trans                              &trans  &to 2   &kp N0
+                          &tranc     &to 0      &trans                              &trans  &to 2   &kp N0
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
