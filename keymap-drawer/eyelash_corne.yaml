@@ -42,7 +42,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - '&key RSHIFT'
   - $$mdi:apple-keyboard-option$$
   - {t: NUM, h: toggle}
   - {t: '$$mdi:keyboard-space$$', h: NAV}
@@ -190,7 +190,7 @@ layers:
   - {t: '3', s: '#'}
   - {t: ',', s: <}
   - {t: SET, h: toggle}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&tranc'
   - {t: COLEMAK, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
